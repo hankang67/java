@@ -36,7 +36,12 @@
       <state>
         <projects_view>
           <tree_state>
-            <expand />
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="nbcamp-java-personal-task" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
             <select />
           </tree_state>
         </projects_view>
@@ -139,7 +144,7 @@
       <updated>1713088530682</updated>
       <workItem from="1713088532647" duration="253000" />
       <workItem from="1721803982106" duration="4037000" />
-      <workItem from="1721808090499" duration="2454000" />
+      <workItem from="1721808090499" duration="9001000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <option name="closed" value="true" />
