@@ -14,7 +14,7 @@ public class App {
                 // 첫 번째 숫자 입력 받기
                 System.out.print("첫 번째 숫자를 입력하세요: ");
                 double num1 = sc.nextDouble();
-
+                // 두 번째 숫자 입력 받기
                 System.out.print("두 번째 숫자를 입력하세요: ");
                 double num2 = sc.nextDouble();
                 //사칙연산

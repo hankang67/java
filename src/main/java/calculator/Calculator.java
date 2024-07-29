@@ -15,6 +15,7 @@ public class Calculator {
         results = new ArrayList<>();
     }
 
+    //계산
     public double calculate(double num1, double num2, char operator) throws OperationException {
         /* 위 요구사항에 맞게 구현 */
         /* return 연산 결과 */
@@ -44,9 +45,14 @@ public class Calculator {
         results.add(result); // 결과 저장
         return result;
     }
-
+    // Getter
     public List<Double> getResults() {
-        return results;
+        return new ArrayList<>(results);
+    }
+
+    // Setter
+    public void setResults(List<Double> results) {
+        this.results = results;
     }
 
     public void remove() throws OperationException{
