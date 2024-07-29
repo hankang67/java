@@ -4,9 +4,9 @@ import java.util.*;
 public class App {
 
     public static void main(String[] args) {
+
         Scanner sc = new Scanner(System.in);
         double result = 0;
-        /* 적합한 컬렉션 타입의 변수 선언 1-7*/
         List<Double> results = new ArrayList<>();
 
 
