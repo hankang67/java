@@ -6,8 +6,8 @@ public class App {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         double result = 0;
-        double[] save = new double[10]; // 결과를 저장할 배열
-        int count = 0;
+        /* 적합한 컬렉션 타입의 변수 선언 1-7*/
+        List<Double> results = new ArrayList<>();
 
         while (true) {
             // 첫 번째 숫자 입력 받기
@@ -44,30 +44,30 @@ public class App {
                 System.out.println("잘못된 연산자입니다.");
                 continue;
             }
-            // 1-5  결과 저장 1-6 요소 옮기기 추가
-            if (count < save.length) {
-                save[count] = result;
-                count++;
-            } else {
-                for (int i = 1 ; i < save.length ; i++){
-                    save[i - 1] = save [i] ;
-                }
-                save[save.length - 1] = result;
-
-            }
+            // 1-7 결과 저장( LIST )
+            results.add(result);
 
             // 계산을 계속할지 안할지
-            System.out.print("더 계산하려면 아무문자나 입력하세요. (exit 입력 시 종료)");
+            System.out.print("더 계산하려면 아무문자나 입력하세요. (exit 입력 시 종료,remove 입력 시 가장 먼저 입력된 저장결과가 삭제됩니다.");
 
             String check = sc.next();
+
+            //1-7 remove 입력 받으면 가장 먼저 저장된 결과가 삭제될 것
             if (check.equals("exit")) {
                 break;
+            } else if (check.equals("remove")) {
+                if (!results.isEmpty()) {
+                    results.remove(0);
+                    System.out.println("가장 먼저 저장된 결과가 삭제되었습니다.");
+                } else {
+                    System.out.println("비어있는 저장목록입니다.");
+                }
             }
         }
         //결과 출력
         System.out.println("Save:");
-        for (int i =0 ;i<count;i++){
-            System.out.println((i + 1) + ": " + save[i]);
+        for (int i =0 ;i<results.size();i++){
+            System.out.println((i + 1) + ": " + results.get(i));
         }
     }
 }
