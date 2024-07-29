@@ -35,13 +35,27 @@ public class Calculator {
                 }
                 result = num1 / num2;
                 break;
+            case '%':
+                result = num1 % num2;
+                break;
             default:
                 throw new OperationException("잘못된 연산자입니다.");
         }
         results.add(result); // 결과 저장
         return result;
     }
+
     public List<Double> getResults() {
         return results;
     }
+
+    public void remove() throws OperationException{
+        if (!results.isEmpty()) {
+            results.remove(0); // 가장 먼저 저장된 결과 삭제
+        } else {
+            throw new OperationException("저장된 결과가 없습니다.");
+        }
+    }
+
+
 }
