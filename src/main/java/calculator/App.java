@@ -37,16 +37,23 @@ public class App {
                 } else {
                     System.out.println("0으로 나눌 수 없습니다.");
                 }
+            } else if (operator == '%') {
+                result = num1 % num2;
+                System.out.println("결과: " + num1 + "%" + num2 + "=" + result);
             } else {
                 System.out.println("잘못된 연산자입니다.");
                 continue;
             }
-            // 1-5  결과 저장
+            // 1-5  결과 저장 1-6 요소 옮기기 추가
             if (count < save.length) {
                 save[count] = result;
                 count++;
             } else {
-                System.out.println("결과 저장 공간이 가득 찼습니다.");
+                for (int i = 1 ; i < save.length ; i++){
+                    save[i - 1] = save [i] ;
+                }
+                save[save.length - 1] = result;
+
             }
 
             // 계산을 계속할지 안할지
