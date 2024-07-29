@@ -1,4 +1,5 @@
 package calculator;
+<<<<<<< HEAD
 import java.util.*;
 
 class OperationException extends Exception {
@@ -65,3 +66,9 @@ public class Calculator {
 
 
 }
+=======
+
+public class Calculator {
+
+}
+>>>>>>> 94d2ce02ec3f79b940bf4b2341de5d5c1e289b61

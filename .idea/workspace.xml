@@ -4,6 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="cbccc591-8f54-46e0-b8bf-1c0192b1eef2" name="Changes" comment="Initial commit">
       <change beforePath="$PROJECT_DIR$/.gradle/8.4/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.4/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.4/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.4/executionHistory/executionHistory.lock" afterDir="false" />
@@ -16,6 +17,10 @@
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/calculator/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/calculator/App.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/App.class.uniqueId0" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/App.class.uniqueId0" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+=======
+    <list default="true" id="cbccc591-8f54-46e0-b8bf-1c0192b1eef2" name="Changes" comment="init commit">
+      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
+>>>>>>> 94d2ce02ec3f79b940bf4b2341de5d5c1e289b61
       <change beforePath="$PROJECT_DIR$/src/main/java/calculator/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/calculator/App.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -33,12 +38,16 @@
       <state>
         <projects_view>
           <tree_state>
+<<<<<<< HEAD
             <expand>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="nbcamp-java-personal-task" type="f1a62948:ProjectNode" />
               </path>
             </expand>
+=======
+            <expand />
+>>>>>>> 94d2ce02ec3f79b940bf4b2341de5d5c1e289b61
             <select />
           </tree_state>
         </projects_view>
@@ -53,11 +62,14 @@
     </option>
   </component>
   <component name="Git.Settings">
+<<<<<<< HEAD
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
         <option value="kang &lt;m0nsia67@gmail.com&gt;" />
       </list>
     </option>
+=======
+>>>>>>> 94d2ce02ec3f79b940bf4b2341de5d5c1e289b61
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
         <entry key="$PROJECT_DIR$" value="master" />
@@ -80,17 +92,26 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
+<<<<<<< HEAD
     "Gradle.nbcamp-java-personal-task [:App.main()].executor": "Run",
+=======
+    "Gradle.nbcamp-java-personal-task [:App.main()].executor": "Debug",
+>>>>>>> 94d2ce02ec3f79b940bf4b2341de5d5c1e289b61
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
+<<<<<<< HEAD
     "last_opened_file_path": "C:/Users/m0nsi/Desktop/Java-Carculator",
+=======
+    "last_opened_file_path": "C:/Users/m0nsi/Desktop/발제/nbcamp-java-personal-task",
+>>>>>>> 94d2ce02ec3f79b940bf4b2341de5d5c1e289b61
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+<<<<<<< HEAD
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
@@ -103,6 +124,15 @@
       <recent name="calculator" />
     </key>
   </component>
+=======
+    "project.structure.last.edited": "SDKs",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+>>>>>>> 94d2ce02ec3f79b940bf4b2341de5d5c1e289b61
   <component name="RunManager">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="calculator.App" />
@@ -140,6 +170,7 @@
       <option name="presentableId" value="Default" />
       <updated>1713088530682</updated>
       <workItem from="1713088532647" duration="253000" />
+<<<<<<< HEAD
       <workItem from="1721803982106" duration="4037000" />
       <workItem from="1721808090499" duration="10425000" />
       <workItem from="1721820522945" duration="261000" />
@@ -147,6 +178,9 @@
       <workItem from="1721882789898" duration="8531000" />
       <workItem from="1721901646569" duration="6052000" />
       <workItem from="1721957739692" duration="1345000" />
+=======
+      <workItem from="1721803982106" duration="1238000" />
+>>>>>>> 94d2ce02ec3f79b940bf4b2341de5d5c1e289b61
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <option name="closed" value="true" />
@@ -156,6 +190,7 @@
       <option name="project" value="LOCAL" />
       <updated>1713088729134</updated>
     </task>
+<<<<<<< HEAD
     <task id="LOCAL-00002" summary="Initial commit">
       <option name="closed" value="true" />
       <created>1721805591967</created>
@@ -165,6 +200,9 @@
       <updated>1721805591967</updated>
     </task>
     <option name="localTasksCounter" value="3" />
+=======
+    <option name="localTasksCounter" value="2" />
+>>>>>>> 94d2ce02ec3f79b940bf4b2341de5d5c1e289b61
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -195,7 +233,11 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init commit" />
+<<<<<<< HEAD
     <MESSAGE value="Initial commit" />
     <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
+=======
+    <option name="LAST_COMMIT_MESSAGE" value="init commit" />
+>>>>>>> 94d2ce02ec3f79b940bf4b2341de5d5c1e289b61
   </component>
 </project>
