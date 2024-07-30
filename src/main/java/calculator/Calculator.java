@@ -18,6 +18,7 @@ public abstract class Calculator {
     public SubtractOperator subtractOperator;
     public MultiplyOperator multiplyOperator;
     public DivideOperator divideOperator;
+    public ModOperator modOperator;
 
 
     //생성자
@@ -27,12 +28,13 @@ public abstract class Calculator {
     }
 
     // 사칙연산 클래스들을 초기화 해야하는데 이때, 반드시 생성자를 활용해 봅니다.
-    public Calculator(AddOperator addOperator, SubtractOperator subtractOperator, MultiplyOperator multiplyOperator, DivideOperator divideOperator) {
+    public Calculator(AddOperator addOperator, SubtractOperator subtractOperator, MultiplyOperator multiplyOperator, DivideOperator divideOperator, ModOperator modOperator) {
         this();
         this.addOperator = addOperator;
         this.subtractOperator = subtractOperator;
         this.multiplyOperator = multiplyOperator;
         this.divideOperator = divideOperator;
+        this.modOperator = modOperator;
     }
 
     // Getter
