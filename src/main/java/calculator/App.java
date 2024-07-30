@@ -6,7 +6,9 @@ public class App {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
-        Calculator calculator = new Calculator();
+//        Calculator calculator = new Calculator();
+        ArithmeticCalculator arithmeticCalculator = new ArithmeticCalculator();
+        CircleCalculator circleCalculator = new CircleCalculator();
 
 
 
@@ -14,7 +16,7 @@ public class App {
             try {
                 System.out.println("(1: 사칙연산, 2:원의 넓이) : ");
                 String check = sc.next();
-                /* 사칙연산을 진행할지 원의 너비를 구할지 선택 구현 */
+
                 switch (check) {
                     case "1":
                         // 첫 번째 숫자 입력 받기
@@ -28,7 +30,7 @@ public class App {
                         char operator = sc.next().charAt(0);
 
                         // 계산
-                        double result = calculator.calculate(num1, num2, operator);
+                        double result = arithmeticCalculator.calculate(num1, num2, operator);
                         System.out.println("결과: " + num1 + operator + num2 + "=" + result);
                         break;
 
@@ -39,12 +41,13 @@ public class App {
                         /* 저장된 원의 넓이 값들 바로 전체 조회 */
                         System.out.println("원의 반지름을 입력하세요.");
                         double  radius = sc.nextDouble();
-                        double area = calculator.calculateCircle(radius);
+                        double area = circleCalculator.calculateCircle(radius);
                         System.out.println("원의 넓이: " + area);
 
-                        calculator.inquiryCircleAreas();
+                        circleCalculator.inquiryCircleAreas();
 
                         break;
+
                     default:
                         System.out.println("잘못된 입력입니다. 다시 시도해주세요.");
                         break;
@@ -69,7 +72,9 @@ public class App {
                 case "1": // exit
                     System.out.println("프로그램을 종료합니다.");
                     try {
-                        calculator.inquiry();
+                        arithmeticCalculator.inquiry();
+                        circleCalculator.inquiryCircleAreas();
+
                     } catch (Exception e){
                         System.out.println(e.getMessage());
                     }
@@ -78,7 +83,8 @@ public class App {
 
                 case "2": // remove
                     try {
-                        calculator.remove();
+                        arithmeticCalculator.remove();
+                        circleCalculator.remove();
                         System.out.println("가장 먼저 저장된 결과가 삭제되었습니다.");
 
                     }catch (Exception e) {
@@ -86,7 +92,8 @@ public class App {
                     }
                 case "3": // inquiry
                     try {
-                        calculator.inquiry();
+                        arithmeticCalculator.inquiry();
+                        circleCalculator.inquiryCircleAreas();
                     } catch (Exception e){
                         System.out.println(e.getMessage());
                     }
