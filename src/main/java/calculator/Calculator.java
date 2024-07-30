@@ -8,15 +8,25 @@ class OperationException extends Exception {
     }
 }
 
+
+
 public class Calculator {
     /* 연산 결과를 저장하는 컬렉션 타입 필드 선언 및 생성 */
     private List<Double> results;
+    /* 원의 넓이 결과를 저장하는 컬렉션 타입의 필드 선언 및 생성 */
+    private List<Double> circleAreas;
 
-    //2-6 이게 맞는지는 모르곘는데 대충 results를 new 할때마다 초기화 된 상태로 사용할 수 있게 하라는 것 같아서...
-    //근데 이미 했어...(이게 맞나?)
+
+    //2-6 생성자
     public Calculator() {
         results = new ArrayList<>();
+        circleAreas = new ArrayList<>();
     }
+
+    private static double radius;
+    //static: 한 번 입력된 반지름의 값은 변하지 않아서
+    private final static double PI = 3.14;
+    // final: 3.14는 절대로 변하지 않으니까
 
     //계산
     public double calculate(double num1, double num2, char operator) throws OperationException {
@@ -48,17 +58,30 @@ public class Calculator {
         results.add(result); // 결과 저장
         return result;
     }
+
+
+    /* 원의 넓이 저장 필드 Getter, Setter, 조회 메서드 구현 */
+
     // Getter
     public List<Double> getResults() {
         return new ArrayList<>(results);
+    }
+    public List<Double> getCircleAreas() {
+        return new ArrayList<>(circleAreas);
     }
 
     // Setter
     public void setResults(List<Double> results) {
         this.results = results;
     }
+    public void getCircleAreas(List<Double> circleAreas) {
+        this.circleAreas = circleAreas;
+    }
 
-    //이거 해놨는데 왜 이게 4번문제이죠?
+
+
+
+    //2-4 remove
     public void remove() throws OperationException{
         if (!results.isEmpty()) {
             results.remove(0); // 가장 먼저 저장된 결과 삭제
@@ -75,6 +98,25 @@ public class Calculator {
         } else {
             for (int i = 0; i< results.size();i++){
                 System.out.println(results.get(i));
+            }
+        }
+    }
+
+    //2-7 Calculator 클래스에 반지름을 매개변수로 전달받아 원의 넓이를 계산하여 반환해주는 메서드를 구현
+    public double calculateCircle(double radius) {
+       double area = PI * radius * radius;
+        circleAreas.add(area);
+       return area;
+    }
+
+    //원의 넓이 조회
+    public void inquiryCircleAreas() {
+        System.out.println("저장된 원의 넓이:");
+        if (circleAreas.isEmpty()) {
+            System.out.println("저장된 결과가 없습니다.");
+        } else {
+            for (int i = 0; i < circleAreas.size(); i++) {
+                System.out.println(circleAreas.get(i));
             }
         }
     }

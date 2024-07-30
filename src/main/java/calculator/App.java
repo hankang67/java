@@ -9,22 +9,54 @@ public class App {
         Calculator calculator = new Calculator();
 
 
+
         while (true) {
             try {
-                // 첫 번째 숫자 입력 받기
-                System.out.print("첫 번째 숫자를 입력하세요: ");
-                double num1 = sc.nextDouble();
-                // 두 번째 숫자 입력 받기
-                System.out.print("두 번째 숫자를 입력하세요: ");
-                double num2 = sc.nextDouble();
-                //사칙연산
-                System.out.print("사칙연산 기호를 입력하세요: ");
-                char operator = sc.next().charAt(0);
+                System.out.println("(1: 사칙연산, 2:원의 넓이) : ");
+                String check = sc.next();
+                /* 사칙연산을 진행할지 원의 너비를 구할지 선택 구현 */
+                switch (check) {
+                    case "1":
+                        // 첫 번째 숫자 입력 받기
+                        System.out.print("첫 번째 숫자를 입력하세요: ");
+                        double num1 = sc.nextDouble();
+                        // 두 번째 숫자 입력 받기
+                        System.out.print("두 번째 숫자를 입력하세요: ");
+                        double num2 = sc.nextDouble();
+                        //사칙연산
+                        System.out.print("사칙연산 기호를 입력하세요: ");
+                        char operator = sc.next().charAt(0);
 
-                // 계산
-                double result = calculator.calculate(num1, num2, operator);
-                System.out.println("결과: " + num1 + operator + num2 + "=" + result);
-            }catch (OperationException e){
+                        // 계산
+                        double result = calculator.calculate(num1, num2, operator);
+                        System.out.println("결과: " + num1 + operator + num2 + "=" + result);
+                        break;
+
+
+                    case "2" :
+                        /* 원의 넓이를 구하는 경우 반지름을 입력받아 원의 넓이를 구한 후 출력*/
+                        /* 원의 넓이 저장 */
+                        /* 저장된 원의 넓이 값들 바로 전체 조회 */
+                        System.out.println("원의 반지름을 입력하세요.");
+                        double  radius = sc.nextDouble();
+                        double area = calculator.calculateCircle(radius);
+                        System.out.println("원의 넓이: " + area);
+
+                        calculator.inquiryCircleAreas();
+
+                        break;
+                    default:
+                        System.out.println("잘못된 입력입니다. 다시 시도해주세요.");
+                        break;
+                }
+
+
+
+
+
+
+
+            } catch (OperationException e){
                 System.out.println(e.getMessage());
                 continue;
             }
