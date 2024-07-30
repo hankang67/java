@@ -13,10 +13,26 @@ public abstract class Calculator {
     /* 연산 결과를 저장하는 컬렉션 타입 필드 선언 및 생성 */
     public List<Double> results;
 
+    //사칙연산 연산자 객체
+    public AddOperator addOperator;
+    public SubtractOperator subtractOperator;
+    public MultiplyOperator multiplyOperator;
+    public DivideOperator divideOperator;
+
 
     //생성자
     public Calculator() {
         results = new ArrayList<>();
+
+    }
+
+    // 사칙연산 클래스들을 초기화 해야하는데 이때, 반드시 생성자를 활용해 봅니다.
+    public Calculator(AddOperator addOperator, SubtractOperator subtractOperator, MultiplyOperator multiplyOperator, DivideOperator divideOperator) {
+        this();
+        this.addOperator = addOperator;
+        this.subtractOperator = subtractOperator;
+        this.multiplyOperator = multiplyOperator;
+        this.divideOperator = divideOperator;
     }
 
     // Getter

@@ -4,27 +4,21 @@ package calculator;
 public class ArithmeticCalculator extends Calculator{
     //부모클래스의 생성자를 호출하자
     public ArithmeticCalculator() {
-        super();
+        super(new AddOperator(), new SubtractOperator(), new MultiplyOperator(), new DivideOperator());
     }
+
     @Override
     public double calculate(double num1, double num2, char operator) throws OperationException {
         double result;
         switch (operator) {
             case '+':
-                result = num1 + num2;
-                break;
+                return addOperator.operator(num1, num2);
             case '-':
-                result = num1 - num2;
-                break;
+                return subtractOperator.operator(num1, num2);
             case '*':
-                result = num1 * num2;
-                break;
+                return multiplyOperator.operator(num1, num2);
             case '/':
-                if (num2 == 0) {
-                    throw new OperationException("0으로 나눌 수 없습니다.");
-                }
-                result = num1 / num2;
-                break;
+                return divideOperator.operator(num1, num2);
             case '%':
                 result = num1 % num2;
                 break;
