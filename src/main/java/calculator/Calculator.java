@@ -12,6 +12,8 @@ public class Calculator {
     /* 연산 결과를 저장하는 컬렉션 타입 필드 선언 및 생성 */
     private List<Double> results;
 
+    //2-6 이게 맞는지는 모르곘는데 대충 results를 new 할때마다 초기화 된 상태로 사용할 수 있게 하라는 것 같아서...
+    //근데 이미 했어...(이게 맞나?)
     public Calculator() {
         results = new ArrayList<>();
     }
