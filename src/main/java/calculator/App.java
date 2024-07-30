@@ -36,9 +36,10 @@ public class App {
             switch (check) {
                 case "1": // exit
                     System.out.println("프로그램을 종료합니다.");
-                    System.out.println("저장된 결과:");
-                    for (int i = 0; i < calculator.getResults().size(); i++) {
-                        System.out.println(calculator.getResults().get(i));
+                    try {
+                        calculator.inquiry();
+                    } catch (Exception e){
+                        System.out.println(e.getMessage());
                     }
                     sc.close();
                     return;
@@ -52,9 +53,10 @@ public class App {
                         System.out.println(e.getMessage());
                     }
                 case "3": // inquiry
-                    System.out.println("저장된 결과:");
-                    for (int i = 0; i < calculator.getResults().size(); i++) {
-                        System.out.println(calculator.getResults().get(i));
+                    try {
+                        calculator.inquiry();
+                    } catch (Exception e){
+                        System.out.println(e.getMessage());
                     }
                     break;
 

@@ -65,6 +65,18 @@ public class Calculator {
         }
     }
 
+    //2-5 저장된 연산 결과를 조회하는 기능을 가진 메서드를 구현해보자
+    public void inquiry() throws OperationException{
+        System.out.println("저장된 결과 :");
+        if (results. isEmpty()) {
+            System.out.println("저장된 결과가 없습니다.");
+        } else {
+            for (int i = 0; i< results.size();i++){
+                System.out.println(results.get(i));
+            }
+        }
+    }
+
 
 }
 
