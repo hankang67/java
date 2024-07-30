@@ -1,9 +1,9 @@
 package calculator;
-<<<<<<< HEAD
 import java.util.*;
 
 class OperationException extends Exception {
     public OperationException(String message) {
+
         super(message);
     }
 }
@@ -56,6 +56,7 @@ public class Calculator {
         this.results = results;
     }
 
+    //이거 해놨는데 왜 이게 4번문제이죠?
     public void remove() throws OperationException{
         if (!results.isEmpty()) {
             results.remove(0); // 가장 먼저 저장된 결과 삭제
@@ -66,9 +67,6 @@ public class Calculator {
 
 
 }
-=======
 
-public class Calculator {
 
-}
->>>>>>> 94d2ce02ec3f79b940bf4b2341de5d5c1e289b61
+
